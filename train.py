@@ -80,7 +80,7 @@ def train(download=False, csv_path='', download_path='', img_path='', test_size=
     epochs=epochs)
   
   model.save(os.path.join(os.getcwd(), 'my_model.h5'))
-
+	
   with open(os.path.join(os.getcwd(), 'label.txt'), 'w') as f:
     for label in list(train_ds.class_names):
       f.write(str(label)+',')

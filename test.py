@@ -1,4 +1,5 @@
 import tensorflow as tf
+import numpy as np
 
 def test(model_path, img_path):
 
@@ -17,6 +18,15 @@ def test(model_path, img_path):
 
     print(label_type[pred]) 
     return label_type[pred]
+
+model_path = "C:\\Users\\ankur\\Documents\\GitHub\\clairvoyance\\purplemana_condition_classifer.h5"
+#img_path = "C:\\Users\\ankur\\Documents\\GitHub\\clairvoyance\\examples\zz__raw-T473-1004-1-back-HP.jpg"
+#img_path = "C:\\Users\\ankur\\Documents\\GitHub\\clairvoyance\\examples\zz__raw-TG-093021-A-back.jpg"
+img_path = "C:\\Users\\ankur\\Documents\\GitHub\\clairvoyance\\examples\zz__raw-T425-0810-7-back.jpg"
+#img_path = "C:\\Users\\ankur\\Documents\\GitHub\\clairvoyance\\examples\zz__raw-T413-0730-1-back.jpg"
+#img_path = "C:\\Users\\ankur\\Documents\\GitHub\\clairvoyance\\examples\zz__T465-0922-8-back-deskew.jpg"
+
+
 
 if __name__ == "__main__":
     test(model_path, img_path)
