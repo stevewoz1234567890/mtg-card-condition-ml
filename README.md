@@ -1,6 +1,15 @@
-# Clairvoyance
+# mtg-card-condition-ml
 
-Transfer-learning classifier for **trading card condition** labels. A frozen **VGG16** backbone feeds a small dense head; images are organized as **one subdirectory per class** (e.g. `HP`, `NM`, `LP+`).
+Transfer-learning classifier for **Magic: The Gathering** (and similar) **card condition** labels from photos (e.g. card backs). A frozen **VGG16** backbone feeds a small dense head; training data is **one subdirectory per class** (e.g. `HP`, `NM`, `LP+`).
+
+Clone:
+
+```bash
+git clone https://github.com/<your-username>/mtg-card-condition-ml.git
+cd mtg-card-condition-ml
+```
+
+*(Replace `<your-username>` with the GitHub account that hosts the fork or canonical repo.)*
 
 ## Requirements
 
